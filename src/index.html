@@ -13,88 +13,128 @@
     <script type="text/javascript" src="./js/index.js"></script>
   </head>
   <body>
-    <form style="border: solid black;" id="regForm" action="">
-      <h1>Profile:</h1></br>
+   <body>
+          <form id="regForm" action="">
 
-      <!-- One "tab" for each step in the form: -->
-      <div class="tab">
-        <p>
-          <input
-            placeholder="Your prefered name"
-            oninput="this.className = ''"
-          />
-        </p>
-        <p>
-          <input placeholder="Birthday..." oninput="this.className = ''" />
-        </p>
-      </div>
-
-      <div class="tab">
-        Contact Info:
-        <p><input placeholder="spouse" oninput="this.className = ''" /></p>
-        <p><input placeholder="beverage" oninput="this.className = ''" /></p>
-      </div>
-
-      <div class="tab">
-        Birthday:
-        <p><input placeholder="food " oninput="this.className = ''" /></p>
-        <p><input placeholder="door code" oninput="this.className = ''" /></p>
-        <!-- <p><input placeholder="yyyy" oninput="this.className = ''" /></p> -->
-      </div>
-
-      <div class="tab">
-        Login Info:
-        <p>
-          <input placeholder="street address" oninput="this.className = ''" />
-        </p>
-        <p>
-          <input placeholder="street address 2" oninput="this.className = ''" />
-        </p>
-      </div>
-
-      <div class="tab">
-        Adress:
-        <p><input placeholder="zipcode  " oninput="this.className = ''" /></p>
-        <p><input placeholder="city" oninput="this.className = ''" /></p>
-        <p><input placeholder="state " oninput="this.className = ''" /></p>
-      </div>
-
-      <div style="overflow:auto;">
-        <div style="float:right;">
-          <button type="button" id="prevBtn" onclick="nextPrev(-1)">
-            Previous
-          </button>
-          <button class="btn btn-dark" id="nextBtn" onclick="nextPrev(1)">
-            Next
-          </button>
-        </div>
-      </div>
-
-      <!-- Circles which indicates the steps of the form: -->
-      <div style="text-align:center;margin-top:40px;">
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-      </div>
-    </form>
-    <div class="container">
-      <div class="row" style="width: 100%;">
-        <div class="fish_wrap">
-          <div class="fred">
-            <div class="top_fin"></div>
-            <div class="tail_fin"></div>
-            <div class="fish_body">
-              <div class="eye"></div>
-              <div class="scale_1"></div>
-              <div class="scale_2"></div>
-              <div class="scale_3"></div>
-              <div class="scale_4"></div>
+            <h1>Register:</h1>
+            
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">
+              <p><input placeholder="your prefered name" oninput="this.className = ''"></p>
+              <p><input placeholder="birthday" oninput="this.className = ''"></p>
             </div>
+            
+            <div class="tab">
+              <p><input placeholder="spouse" oninput="this.className = ''"></p>
+              <p><input placeholder="beverage" oninput="this.className = ''"></p>
+              <p><input placeholder="food" oninput="this.className = ''"></p>
+            </div>
+            
+            <div class="tab">Birthday:
+              <p><input placeholder="door code" oninput="this.className = ''"></p>
+              <p><input placeholder="street address" oninput="this.className = ''"></p>
+              <p><input placeholder="street address 2" oninput="this.className = ''"></p>
+            </div>
+            
+            <div class="tab">Login Info:
+              <p><input placeholder="zipcode  ..." oninput="this.className = ''">
+
+            <!-- <p><input placeholder="state" oninput="this.className = ''"> -->
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control user-edit-input" name="state" value="{{profile.state if profile}}">
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL" selected>Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
           </div>
-        </div>
-      </div>
-    </div>
+        </p>
+              
+              <!-- <p><input placeholder="city" oninput="this.className = ''"></p> -->
+            </div>
+
+
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              </div>
+            </div>
+            
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+            </form>
+
+          <div class="container">
+            <div class="row" style="width: 100%; position:relative;">
+              <div class="fish_wrap">
+                <div class="fred">
+                  <div class="top_fin"></div>
+                  <div class="tail_fin"></div>
+                  <div class="fish_body">
+                    <div class="eye"></div>
+                    <div class="scale_1"></div>
+                    <div class="scale_2"></div>
+                    <div class="scale_3"></div>
+                    <div class="scale_4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+       </div>
+   
   </body>
 </html>
