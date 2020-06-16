@@ -15,7 +15,7 @@
 
 */
 /* Style the form */
-#regForm {
+  #regForm {
   background-color: #dfd7d7;
   margin: 100px auto;
   padding: 40px;
@@ -69,9 +69,9 @@ input.invalid {
   height: 230px;
   left: 5px;
   position: absolute;
-  top: 150px;
+  /* top: 150px; */
   z-index: 90;
-  margin-top: 30%;
+  margin-top: 0%;
 }
 .fred {
   transform: rotate(-37deg);
@@ -302,8 +302,10 @@ input.invalid {
 /* start of fish animation */
 .fish_wrap {
   left: 200px;
-  top: 105px;
-  // z-index: 100;
+  position: relative;
+  animation: swim 5s 2;
+  /* animation-direction: alternate; */
+  /* top: 105px;  */
   animation-name: swim;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -322,14 +324,9 @@ input.invalid {
 }
 
 @keyframes swim {
-  0% {
-    left: 1000px;
-  }
-
-  100% {
-    left: -170px;
-    transform: scaleX(1);
-  }
+  0%   {  left: 1000px;}
+  
+  100% { left: -170px; }
 }
 /*end of fish path */
 
