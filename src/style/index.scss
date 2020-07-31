@@ -1,6 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
-    import 'relative/path/to/stylesheet.scss';
+import 'relative/path/to/stylesheet.scss';
 
 
 
@@ -26,9 +25,6 @@ input.invalid {
   margin: 0 2px;
   background-color: #4c57f1;
   border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
 }
 
 /*fred the fish*/
@@ -57,8 +53,7 @@ input.invalid {
   border-radius: 200px 112px 47px 62px;
   -moz-border-radius: 200px 112px 47px 62px;
   -webkit-border-radius: 200px 112px 47px 62px;
-  -o-border-radius: 200px 112px 47px 62px;
-  -ms-border-radius: 200px 112px 47px 62px;
+
 
   box-shadow: 6px -12px 15px #3a2104 inset, -2px -3px 4px #281602 inset;
   -moz-box-shadow: 6px -12px 15px #3a2104 inset, -2px -3px 4px #281602 inset;
