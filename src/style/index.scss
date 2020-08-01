@@ -39,9 +39,6 @@ input.invalid {
 .fred {
   transform: rotate(-37deg);
   -moz-transform: rotate(-37deg);
-  -webkit-transform: rotate(-37deg);
-  -o-transform: rotate(-37deg);
-  -ms-transform: rotate(-37deg);
 }
 .fish_body {
   transform: skewX(30deg) skewY(5deg);
